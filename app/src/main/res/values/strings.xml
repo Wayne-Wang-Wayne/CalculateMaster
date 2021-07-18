@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Calculate Master</string>
+    <string name="app_name" >Calculate Master</string>
+    <string name="time_left_string">Time Left : %d</string>
+    <string name="win_lose_string">Win: %d\nLose: %d</string>
+    <string name="done">Done!</string>
+    <string name="restart">Play Again!</string>
 </resources>

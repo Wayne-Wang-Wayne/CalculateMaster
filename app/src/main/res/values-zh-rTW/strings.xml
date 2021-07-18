@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">算計達人</string>
+    <string name="time_left_string">剩餘時間: %d</string>
+    <string name="win_lose_string">答對: %d\n答錯: %d</string>
+    <string name="done">結束！</string>
+    <string name="restart">再來一場！</string>
+</resources>

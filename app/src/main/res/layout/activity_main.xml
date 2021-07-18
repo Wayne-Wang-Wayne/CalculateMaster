@@ -16,19 +16,18 @@
             android:id="@+id/timeLeft"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="Time Left : 15"
+            android:text="@string/time_left_string"
             android:layout_weight="1"
             android:gravity="center"
-            android:textSize="20dp" />
+            android:textSize="@dimen/time_left" />
 
         <TextView
             android:id="@+id/numPlusNum"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-
-            android:gravity="center_horizontal"
-            android:textSize="40dp" />
+            android:gravity="center"
+            android:textSize="@dimen/num_plus_num" />
 
         <TextView
 
@@ -36,9 +35,9 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center_horizontal"
-            android:text="Win:0, lose:0"
-            android:textSize="30dp" />
+            android:gravity="center"
+            android:text="@string/win_lose_string"
+            android:textSize="@dimen/win_lose" />
 
 
     </LinearLayout>
@@ -54,7 +53,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="number"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            app:backgroundTint="#E91E63" />
 
         <Button
             android:id="@+id/topRight"
@@ -62,7 +62,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="number"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            app:backgroundTint="#673AB7" />
 
 
     </LinearLayout>
@@ -78,7 +79,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="number"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            app:backgroundTint="#FFEB3B" />
 
         <Button
             android:id="@+id/bottomRight"
@@ -86,7 +88,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="number"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            app:backgroundTint="#8BC34A" />
 
 
     </LinearLayout>
@@ -96,16 +99,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Done!"
+        android:text="@string/done"
         android:textSize="50dp" />
 
     <Button
         android:id="@+id/startPlay"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Play Again!"
-        android:textSize="59dp" />
+        android:text="@string/restart"
+        android:textSize="@dimen/restart_string_size" />
 
     <View
         android:layout_width="match_parent"

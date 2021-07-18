@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="time_left">16dp</dimen>
+    <dimen name="num_plus_num">22dp</dimen>
+    <dimen name="win_lose">22dp</dimen>
+    <dimen name="restart_string_size">26dp</dimen>
+</resources>

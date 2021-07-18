@@ -40,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
         Button startPlay = findViewById(R.id.startPlay);
         TextView doneSign = findViewById(R.id.done);
 
+        timeLeft.setText(getString(R.string.time_left_string, 15));
+        playStatus.setText(getString(R.string.win_lose_string, 0, 0));
+
         doneSign.setAlpha(0);
 
         ArrayList<Button> buttonViews = new ArrayList<>();
@@ -62,7 +65,8 @@ public class MainActivity extends AppCompatActivity {
                     stillHaveTime = false;
                     doneSign.setAlpha(1);
                 }
-                timeLeft.setText("Time Left : " + restOfTime / 1000);
+                timeLeft.setText(getString(R.string.time_left_string, restOfTime / 1000));
+
                 restOfTime = restOfTime - 1000;
             }
         };
@@ -74,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 doneSign.setAlpha(0);
                 winTime = 0;
                 loseTime = 0;
-                playStatus.setText("Win:" + winTime + "Lose:" + loseTime);
+                playStatus.setText(getString(R.string.win_lose_string, winTime, loseTime));
                 handler.removeCallbacks(runnable);
                 handler.post(runnable);
                 resetBoard(buttonViews);
@@ -93,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                     if (stillHaveTime) {
                         if (answer == Integer.parseInt(buttonView.getText().toString())) {
                             winTime++;
-                            playStatus.setText("Win:" + winTime + "Lose:" + loseTime);
+                            playStatus.setText(getString(R.string.win_lose_string, winTime, loseTime));
                             resetBoard(buttonViews);
                             //聲音
                             yayay.stop();
@@ -107,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
 
                         } else {
                             loseTime++;
-                            playStatus.setText("Win:" + winTime + "Lose:" + loseTime);
+                            playStatus.setText(getString(R.string.win_lose_string, winTime, loseTime));
                             resetBoard(buttonViews);
                             //聲音
                             boo.stop();
